@@ -3,14 +3,14 @@
 if [ "$1" != "" ]; then
 	echo "Running Recon on $1"
 else
-	echo "Usage ./nmap_wrap.sh <Target IP> <hostname>"
+	echo "Usage ./recon.sh <Target IP> <hostname>"
 	exit 1
 fi
 
 if [ "$2" != "" ]; then
 	echo "Saving files to directory: $2"
 else 
-	echo "Usage ./nmap_wrap.sh <Target IP> <hostname>"
+	echo "Usage ./recon.sh <Target IP> <hostname>"
 	exit 1
 fi
 
@@ -46,4 +46,4 @@ echo "Beginning Unicorn Scan"
 #uniscan -u $1 -qweds > ./$2/uniscan
 echo "Unicorn Scan Complete!"
 
-echo "----------------------------------------------------------------------"
+echo "------------------------------Recon Complete----------------------------------------"
